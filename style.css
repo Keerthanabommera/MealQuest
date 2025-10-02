@@ -1,0 +1,290 @@
+
+/* Login and Signup section background */
+#login-section,
+#signup-section {
+  background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;       /* makes the image cover entire screen */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+  min-height: 100vh;
+}
+
+/* Home section background */
+#home-section {
+  background: #fffbe6; /* your current home color */
+  min-height: 100vh; /* make it full screen */
+}
+
+/* Topbar */
+.topbar {
+  background: #000;
+  padding: 12px 18px;
+}
+
+.site-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.0rem;
+  color: white;
+}
+
+.fav-btn {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.12);
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logout-btn {
+    background: linear-gradient(to right,#127f06,#1ebb23,#65f541) ; 
+    border-color: #089103;      /* match border */
+    color: black;
+    font-weight: bolder;                
+    border-radius: 5px;          /* rounded corners */
+    padding: 8px 16px;           /* adjust size */
+    transition: background 0.3s;
+}
+
+#logout-btn:hover {
+    background: linear-gradient(to right,#a61a0b,#e94f3e);  /* darker red on hover */
+    border-color: #c0392b;
+}
+
+/*Favorite section*/
+#favorites-section {
+  background-color: #fffbe6; /* section background */
+}
+
+#favorites-section .d-flex.justify-content-between {
+  background-color: black; /* entire top bar background */
+  padding: 12px 15px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+#favorites-section h2 { 
+  color: white; /* header text color */
+}
+
+/* hero-section*/
+.hero-wrap {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&s=5a1b0e0adf8b2d4d3b6f7f2d4f0c64b6');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.60);
+}
+
+/* overlay with search */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-search .form-control {
+  border-radius: 40px;
+  padding: 12px 16px;
+}
+
+.hero-search .btn {
+  border-radius: 40px;
+  padding: 12px 20px;
+}
+
+/* hero actions */
+.hero-actions .btn-lg {
+  border-radius: 30px;
+  padding: 10px 22px;
+}
+
+/* quick filters area */
+.ending-scp {
+  background: transparent;
+  padding: 8px 0;
+}
+
+#quick-filters {
+  display: flex;
+  justify-content: center; /* center pills */
+  flex-wrap: wrap; /* wrap on smaller screens */
+  gap: 8px; /* spacing between pills */
+  flex: 1 1 100%; /* take full width to center properly */
+}
+
+#quick-filters .pill {
+  background: linear-gradient(to right,#f7ef03,#f7f02a,#f5f075);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: #222;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,0.06);
+  font-weight: 600;
+}
+
+#quick-filters .pill:hover {
+  transform: translateY(-2px);
+  transition: transform .12s ease;
+}             
+
+/* Recipe-section */
+#results-grid {
+  margin-top: 8px;
+}
+
+/* cards */
+.card {
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease, transform 0.18s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px; /* round all corners */
+  margin: 10px;         /* space on top, left, right, and bottom */
+  display: block;
+  width: calc(100% - 20px); /* reduce width to accommodate left/right margin */
+}
+
+
+/* Right panel wrapper */
+#right-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px; /* panel width */
+  height: 100vh;
+  background: #fffbe6; /* your current home color */
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* Panel open state */
+#right-panel.open {
+  transform: translateX(0);
+}
+
+/* Home content shifts when panel is open */
+body.panel-open #home-section {
+  margin-right: 300px; /* same as panel width */
+  transition: margin-right 0.3s ease;
+}
+
+/* Panel header */
+.right-panel-header {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  background: transparent;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Panel body */
+.right-panel-body {
+  padding: 12px;
+}
+
+/* Filter wrapper styles */
+.filter-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+/* Filter title with arrow */
+.filter-title {
+  background:linear-gradient(to right,#f7ef03,#f7f02a,#f5f075);;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-title::after {
+  content: "▼";
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+/* Filter options */
+.filter-options {
+  padding: 10px;
+}
+.filter-option {
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.filter-option:hover {
+  background-color: #e9ecef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #right-panel {
+    width: 90%;
+  }
+  body.panel-open #home-section {
+    margin-right: 0;
+  }
+}
+
+/* star overlay on cards */
+.card .fav-star {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  border-radius: 50%;
+  padding: 8px;
+  background: rgba(255,255,255,0.95);
+  cursor: pointer;
+  border: none;
+}
+
+/* messages */
+#message-area, #recipe-message, #favs-message {
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  .topbar-center {
+    left: calc(50% - 20px);
+  }
+  .hero-wrap { height: 260px; }
+  .right-panel { width: 90%; }
+  .right-panel.open { right: 0; left: auto; }
+  .hero-search { width: 95% !important; }
+}
