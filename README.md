@@ -25,6 +25,9 @@ MealQuest
 5. **Favorites (⭐) Section:** Click the top star to view and manage favorite recipes.  
 6. **Menu (☰) Panel:** Filter recipes by cuisine (American, Indian, Asian), meal type (Breakfast, Lunch), and diet (Veg, Non-Veg).  
 7. **Logout:** Returns user to login page; credentials stored locally.
+   
+ <img width="1200" height="500" alt="Screenshot 2025-10-02 200334" src="https://github.com/user-attachments/assets/82b2badf-6ff1-475b-beb2-eb260f9d6e62" />
+
 
 ---
 
