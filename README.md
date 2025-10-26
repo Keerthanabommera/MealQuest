@@ -1,11 +1,6 @@
 # 🍴 MealQuest
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen)](https://your-github-pages-link.com)
-
----
-
-## 🟩 Overview
+### 📝 Overview
 
 MealQuest is a web application that helps users discover recipes based on ingredients and preferences.
 It addresses the common problem of deciding what to cook with available ingredients and helps reduce food waste by providing smart recipe suggestions.
@@ -14,18 +9,15 @@ Recipe data is fetched dynamically from the MealDB API, allowing users to search
 
 ---
 
-## 🟧 Project Structure
-MealQuist/
-│
-├── index.html # Main webpage
-├── style.css # Styling and layout
-├── script.js # JavaScript for API integration and interactivity
-├── README.md # Project documentation
-└── LICENSE # MIT License
+### 📂 Project Structure
+MealQuest
+* index.html # Main webpage
+* style.css # Styling and layout
+* script.js # JavaScript for API integration and interactivity
 
 ---
 
-## 🟦 Features
+### ✨ Features
 1. **Login & Signup:** Simple authentication stored locally.    
 2. **Search Bar & Random Recipe:** Search recipes by ingredient or get one random recipe.  
 3. **Quick Filters:** Buttons for most popular cuisines or meal types.  
@@ -36,24 +28,24 @@ MealQuist/
 
 ---
 
-## 🟨 Tools & Technologies Used
+### 🛠️ Tools & Technologies
 - **HTML5:** Page structure and layout.  
 - **CSS3:** Styling, responsive design, and layout formatting.  
-- **JavaScript:** API calls, dynamic content rendering, filtering, and favorites management.  
-- **Git & GitHub:** Version control and hosting.  
+- **JavaScript:** API calls, dynamic content rendering, filtering, and favorites management.
+- **vsc:** VS Code – Code editor used for development.  
 
 ---
 
-## 🟪 API Used
+### 🌐 API Used
 - **[TheMealDB API](https://www.themealdb.com/api.php)**  
   - Fetches recipes, images, ingredients, and instructions dynamically.  
   - Allows searching by ingredient, random meal generation, and filtering by categories.  
 
 ---
 
-## 🟫 Deployment
+### 🚀 Deployment
 - **Hosted on:** GitHub Pages  
-- **Live Demo:** [Click Here](https://your-github-pages-link.com)  
+- **Live Demo:** [Click Here](https://keerthanabommera.github.io/MealQuest/)  
 
 ### ▶️ To Run Locally
 
@@ -73,7 +65,7 @@ Keerthana Bommera.
 
 ---
 
-### 🌟 Future Scope
+### 🔭 Future Scope
 - Add backend with Node.js to store user credentials and favorites in a database.
 - Introduce personalized recipe recommendations using AI.
 - Build a mobile version for offline access.
